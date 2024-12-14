@@ -9,7 +9,7 @@ for file_name in file_names:
     if not os.path.exists(file_name):
         try:
             with open(file_name, "x") as fp:
-                pass  # File created successfully
+                pass  
         except FileExistsError:
             print(f"File {file_name} already exists.")
     else:
